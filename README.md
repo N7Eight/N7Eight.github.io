@@ -1,9 +1,9 @@
 # N7Eight.github.io
-Главный файл - index.html
-Файл с услугами - amenities.html
+Главный файл - "index.html"
+Файл с услугами - "amenities.html"
 
-Стилевой файл (index.html) - css/style.css
-Стилевой файл (amenities.html) - css/style2.css
+Стилевой файл начальной страницы - "css/style.css"
+Стилевой файл страницы услуг - "css/style2.css"
 
 Фон - js/app.js
 
