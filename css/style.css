@@ -73,6 +73,10 @@ html {
   top: -10px;
 }
 
+#particles-js {
+  height: 97.5vh;
+}
+
 a {
 	text-decoration: none;
 	font-size: 20px;
