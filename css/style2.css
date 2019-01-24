@@ -14,7 +14,264 @@ html {
   position: fixed;
   list-style:none;
   padding-top: 20vh;
-  padding-left: 9vh;
+  padding-left: 0vh;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #B0E0E6;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu {
+  color: #fff;
+  background-color: #7B68EE;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+a:not(:hover) {
+  transition: 1s;
+}
+
+ul {
+  margin-bottom: 50px;
+}
+
+.web p, .web ul, .python p, .python ul {
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.web p {
+  position: absolute;
+  font-size: 40px;
+  top: 10vh;
+  left: 34vh;
+}
+
+.web ul {
+  position: absolute;
+  font-size: 30px;
+  top: 22vh;
+  left: 32vh;
+}
+
+.python p {
+  position: absolute;
+  font-size: 40px;
+  top: 10vh;
+  left: 109vh;
+}
+
+.python ul {
+  position: absolute;
+  font-size: 30px;
+  top: 22vh;
+  left: 108vh;
+}
+
+li {
+  letter-spacing: 0.5vh;
+}
+
+@media screen and (max-width: 1080px) {
+
+  a {
+    font-size: 30px;
+  }
+
+  .hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding-top: 20vh;
+  padding-left: 0vh;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  width: 250px;
+  background-color: #B0E0E6;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.btn-menu {
+  color: #fff;
+  background-color: #7B68EE;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 210px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+  
+  .web, .python {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .web p {
+    font-weight: bold;
+    font-size: 40px;
+    top: 12vh;
+    left: 13vh;
+    letter-spacing: 0.5vh;
+  }
+  .web ul {
+    font-weight: bold;
+    font-size: 30px;
+    top: 17vh;
+    left: 13vh;
+    letter-spacing: 0.5vh;
+  }
+
+  .python p {
+    font-weight: bold;
+    font-size: 40px;
+    top: 32vh;
+    left: 13vh;
+    letter-spacing: 0.5vh;
+  }
+
+  .python ul {
+    font-weight: bold;
+    font-size: 30px;
+    top: 37vh;
+    left: 13vh;
+    letter-spacing: 0.5vh;
+  }
+
+  #particles-js {
+    height: 100vh;
+  }
+}
+
+/*
+html {
+  margin: 0px;
+  padding: 0px;
+  background: #4682B4;
+  overflow: hidden;
+}
+
+#particles-js {
+  height: 97.5vh;
+}
+
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding-top: 20vh;
+  padding-left: 0vh;
+  text-align: center;
   margin: 0;
   box-sizing: border-box;
   width: 200px;
@@ -130,6 +387,10 @@ ul {
   font-size: 30px;
   top: 22vh;
   left: 128vh;
+}
+
+li {
+  letter-spacing: 0.5vh;
 }
 
 @media screen and (max-width: 1080px) {
