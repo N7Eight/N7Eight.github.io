@@ -213,6 +213,11 @@ li {
   #particles-js {
     height: 100vh;
   }
+
+  li {
+    letter-spacing: 0.5vh;
+  }
+
 }
 
 /*
